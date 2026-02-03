@@ -1,0 +1,189 @@
+
+
+body{
+    max-width: 1800px;
+}
+
+
+
+
+.container_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    height: 100%;
+    margin: auto;
+    
+}
+.container_header .form-control::placeholder {
+    opacity: 1;
+}
+.container_header .span{
+    background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+
+.btn-toggle {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+
+
+.menu-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: #cbd5e1;
+    border-radius: 6px;
+}
+
+.menu-item:hover {
+    background-color: #1e293b;
+}
+
+.menu-item.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Sidebar normal */
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 80px);
+  padding: 20px 15px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+
+/* Main cuando sidebar está oculto */
+main {
+  padding: 50px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  overflow-x: hidden;
+}
+main:not(.expanded) {
+  margin-left: 250px;
+}
+main.expanded {
+  margin-left: 0;
+}
+
+
+.container {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
+main{
+    margin-left: 250px;
+    padding: 50px;
+}
+
+.layout{
+    display: flex;
+    padding-top: 80px;
+}
+
+.container_header .form-control{
+    width: 800px;
+    border: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;   /* centra verticalmente icono y texto */
+  justify-content: center;
+  gap: 8px;            /* espacio entre el icono y la palabra "user" */
+  cursor: pointer;
+}
+
+.user img {
+  display: block;       /* evita pequeños desfaces raros */
+}
+
+.user p {
+  margin: 0;            /* quita el margen por defecto del <p> */        /* opcional, por si va sobre fondo oscuro */
+  line-height: 1;       /* ayuda a que quede exactamente al centro */
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0 30px; 
+    height: 80px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 70px);
+    border-right: 1px solid #e0e0e0;
+    padding: 20px 15px;
+    position: fixed;
+}
+
+.menu-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a8a8a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu li:hover {
+    background-color: #10b9e4;
+    box-shadow: 0 2px 10px rgba(4, 217, 255, 0.685);
+    text-shadow: rgba(234, 239, 240, 0.685);
+}
+
+.menu li.active {
+    background-color: #10b9e4;
+    font-weight: bold;
+}
+
+

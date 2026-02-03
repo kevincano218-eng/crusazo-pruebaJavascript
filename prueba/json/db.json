@@ -1,0 +1,48 @@
+{
+  "registros": [
+    {
+      "id": "1",
+      "nombre": "kevin cano",
+      "correo": "kevinuser@gmail.com",
+      "password": "12345",
+      "role": "Usuario"
+    },
+    {
+      "id": "2",
+      "nombre": "kevin cano",
+      "correo": "kevinadmin@gmail.com",
+      "password": "123",
+      "role": "Administrador"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "name": "Advanced Calculus Finals Prep",
+      "category": "Mathematics",
+      "priority": "High",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "name": "Physics Lab Report",
+      "category": "Physics",
+      "priority": "Medium",
+      "status": "In Progress"
+    },
+    {
+      "id": "3",
+      "name": "History Essay",
+      "category": "History",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": "4",
+      "name": "Database Systems Project",
+      "category": "Computer Science",
+      "priority": "High",
+      "status": "In Progress"
+    }
+  ]
+}
